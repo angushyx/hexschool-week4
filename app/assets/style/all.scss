@@ -1,0 +1,5 @@
+@import //先給變數
+  "./abstracts/variable",
+  //再reset
+  "./base/reset",
+  "./base/base", "./abstracts/mixins";
