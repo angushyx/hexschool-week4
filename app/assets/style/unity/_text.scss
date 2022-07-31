@@ -1,0 +1,100 @@
+/* font-size font-weight line-height */
+
+
+.fz{
+    &-1{
+        font-size: $font-size-base*1.4; 
+    }
+    &-2{
+        font-size: $font-size-base*1.6; 
+    }
+    &-3{
+        font-size: $font-size-base*2;
+    }
+    &-4{
+        font-size: $font-size-base*3.6;
+    }
+    &-5{
+        font-size: $font-size-base*4.8;
+    }
+    &-6{
+        font-size: $font-size-base*6.4;
+    }
+
+    @include respond(tablet){
+        &-md-4{
+            font-size: $font-size-base*1.6;
+        }
+    }
+}
+
+
+
+
+.italic{
+    font-style: italic;
+}
+
+
+/* color */
+.text{
+    &-white{    
+        color: $white;
+    }
+}
+/*  line height */
+
+
+/*
+
+21
+24 
+30
+36
+48
+54
+63
+72
+96
+
+*/
+
+
+.line-height{
+    &-1{
+        line-height: $line-height-spacing*7;  //21
+    }
+    &-2{
+        line-height: $line-height-spacing*8;  //24
+    }
+    &-3{
+        line-height:  $line-height-spacing*9; 
+    }
+    &-4{
+        line-height: $line-height-spacing*10; //30
+    }
+    &-5{
+        line-height:$line-height-spacing*12; //36
+    }
+    &-6{
+        line-height:$line-height-spacing*16; //48
+    }
+    &-7{
+        line-height:$line-height-spacing*18; //54
+    }
+    &-8{
+        line-height:$line-height-spacing*21; //63
+    }
+    &-9{
+        line-height:$line-height-spacing*24; //72
+    }
+    &-10{
+        line-height:$line-height-spacing*32; //96
+    }
+
+    @include respond(tablet){
+
+    }
+
+
+}

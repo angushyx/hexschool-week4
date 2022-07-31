@@ -13,55 +13,65 @@
 </head>
 
 <body>
-  <header>
-    <div class="container">
-      <img src="./assets/images/logo-white.png" alt="">
-      <ul class="nav">
+  <header class="bg-primary">
+    <div class="container d-flex-between-center text-white">
+      <div class="py-2">
+        <a href="./">
+          <img src="./assets/images/logo-white.png" class="logo" alt="logo">
+        </a>
+      </div>
+      <ul class="d-flex gap-7 fz-3 nav line-height-4">
         <li>系列鏡框</li>
         <li>門市據點</li>
         <li>部落格</li>
         <li>常見問題</li>
       </ul>
-      <i class="fa-solid fa-bars hamburger"></i>
+      <i class="icon fa-solid fa-bars hamburger fz-4"></i>
     </div>
   </header>
 
-  <%- contents %>
+   <%- contents %>
 
-
-    <footer>
+   
+  <footer class="footer bg-primary">
       <div class="container">
-        <div class="footer-1">
-          <div class="line-1">
-            <ul>
+        <div class="footer-wrapper">
+          <div class="d-flex-between-center text-white pb-4 pt-6">
+            <ul class="nav d-flex gap-6 line-height-2">
               <li>首頁</li>
               <li>系列鏡框</li>
               <li>門市據點</li>
               <li>部落格</li>
               <li>常見問題</li>
             </ul>
-            <ul>
-              <img src="./images/ic-social-fb.png" alt="facebook icon">
-              <img src="./images/ic_social_ig.png" alt="facebook icon">
-              <img src="./images/ic_social_line.png" alt="facebook icon">
+            <ul class="d-flex gap-4">
+              <li class="icon">
+                <img src="./assets/images/ic-social-fb.png" alt="facebook icon">
+              </li>
+              <li class="icon">
+                <img src="./assets/images/ic_social_ig.png" alt="insta icon">
+              </li>
+              <li class="icon">
+                <img src="./assets/images/ic_social_line.png" alt="facebook icon">
+              </li>
             </ul>
           </div>
 
-          <div class="line-2">
-            <ul class="contact">
-              <li><i class="fa-solid fa-phone"></i><span>0800-000-000</span></li>
-              <li><i class="fa-solid fa-envelope"></i></i>glasses@business.com</li>
+          <div class="contact">
+            <ul class="fz-4 text-white line-height-7 fz-md-4 fz-mb-4">
+              <li><i class="fa-solid fa-phone mr-2"></i><span>0800-000-000</span></li>
+              <li><i class="fa-solid fa-envelope mr-2"></i></i>glasses@business.com</li>
             </ul>
           </div>
         </div>
-        <div class="line-3">
+        <div class="trem fz-2 line-height-2 text-white py-8 d-flex-between-center gap-6 py-md-1">
           <p>Copyright © 2020 Glasses.All rights reserved.</p>
-          <p>隱私權政策</p>
+          <p>隱私權政策</p> 
           <p>服務條款</p>
         </div>
       </div>
       </div>
-    </footer>
+  </footer>
 
 
     <script src="https://kit.fontawesome.com/9d802b7972.js" crossorigin="anonymous"></script>

@@ -1,5 +1,6 @@
-@import //先給變數
-  "./abstracts/variable",
-  //再reset
+@import 
+  "./abstracts/variable","./base/base",
   "./base/reset",
-  "./base/base", "./abstracts/mixins";
+  "./abstracts/mixins","./unity/spacing","./unity/text","./unity/typography","./unity/utilities"
+  //layout
+  ,"./layout/header.scss","./layout/footer.scss"
