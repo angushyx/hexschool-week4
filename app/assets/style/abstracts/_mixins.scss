@@ -5,6 +5,13 @@
   transform: translate(-50%, -50%);
 }
 
+@mixin link-hover {
+  transition: all 0.3s;
+  &:hover {
+    @content;
+  }
+}
+
 @mixin flex-between-center {
   display: flex;
   justify-content: space-between;
@@ -16,9 +23,6 @@
   justify-content: center;
   align-items: center;
 }
-
-
-
 
 //MEDIA QUERY MANAGER
 /*
@@ -40,7 +44,6 @@ Breakpoint argument choice:
 */
 
 @mixin respond($breakpoint) {
-
   @if $breakpoint == phone {
     @media (max-width: 650px) {
       @content;

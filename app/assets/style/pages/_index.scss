@@ -1,87 +1,194 @@
-.hero{
-    background-size: cover;
-    height: 840px;
-    background: #ccc;
+.hero {
+  background-size: cover;
+  height: 840px;
+  background: #ccc;
 
-    &-wrapper{
-      height: 100%;
-      >.btn{
-        background: $primary;
-        align-self:flex-end;
-        padding: 12px 6px;
-        font-size: 20px;
-        line-height: 30px;
+  &-wrapper {
+    height: 100%;
+    > .btn {
+      background: $primary;
+      align-self: flex-end;
+      padding: 12px 6px;
+      font-size: 20px;
+      line-height: 30px;
+    }
+  }
+}
+
+.about {
+  background: $light;
+  &-wrapper {
+    padding-bottom: $spacing * 10;
+    align-items: baseline;
+    justify-content: center;
+    > li {
+      @include flex-col-center-center;
+
+      width: 23%;
+      > img {
+        width: 100px;
+        margin-bottom: $spacing * 2;
+      }
+      > h5 {
+        color: $primary;
+        margin-bottom: $spacing;
+        line-height: 36px;
+      }
+      > p {
+        font-weight: 600;
+        line-height: 24px;
+      }
+
+      @include respond(tablet) {
+        width: 43%;
+      }
+      @include respond(phone) {
+        width: 95%;
+      }
+    }
+  }
+}
+
+.classic {
+  &-wrapper {
+    gap: 24px;
+    justify-content: space-between;
+    > li {
+      width: 28%;
+      text-align: center;
+      padding-bottom: 80px;
+      > h5 {
+        padding-top: 8px;
       }
     }
 
+    @include respond(pc) {
+      justify-content: center;
+      > li {
+        width: 70%;
+      }
+    }
+    @include respond(tablet) {
+      > li {
+        width: 95%;
+      }
+    }
+  }
 }
 
-.about{
-    background: $light;
-    &-wrapper{
-        padding-bottom: $spacing*10;
-        align-items: baseline;
-        >li{
-            @include flex-col-center-center;
-            width: 23%;
-            >img{
-                width: 100px;
-                margin-bottom: $spacing*2;
-            }
-            >h5{
-                color:$primary;
-                margin-bottom: $spacing;
-                line-height: 36px;
-            }
-            >p{
-                font-weight: 600;
-                line-height: 24px;
-            }
-            
-        @include respond(tablet){
-            width: 43%;
-        }
-        @include respond(phone){
-            width: 100%;
-        }
-        }
+.co-branding {
+  background: url(../../images/home-section4-1.png);
+  background: #ccc;
+  ul {
+    padding-bottom: 80px;
+    > li {
+      width: 50%;
+      > h5 {
+        background: $white;
+        border: $light-border;
+      }
     }
+  }
+  @include respond(pc) {
+    ul {
+      flex-direction: column;
+      align-items: center;
+      gap: $spacing * 3;
+      > li {
+        width: 80%;
+        @include respond(pc) {
+          width: 95%;
+        }
+      }
+    }
+  }
 }
 
-
-.classic {
-    &-wrapper {
-        gap: 24px;
-        > li {
-          width: 28%;
-          text-align: center;
-          padding-bottom: 80px;
-          >h5{
-            padding-top: 8px;
-          }
-        @include respond(pc){
-            justify-content: center;
-            width: 70%;
-        }
-        @include respond(tablet){
-            width: 100%;
-        }
-        }
+.feedback {
+  padding-bottom: $spacing * 10;
+  &-list {
+    justify-content: space-between;
+  }
+  &-item {
+    width: 23%;
+    box-shadow: 0px 2px 6px #00000029;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+  }
+  @include respond(pc) {
+    &-list {
+      justify-content: center;
     }
+    &-item {
+      width: 48%;
+    }
+  }
+  @include respond(tablet) {
+    &-item {
+      width: 95%;
+    }
+  }
 }
 
-.co-branding{
-    background: url('../../images/home-header.png');
-    background: #ccc;
-    ul{
-        padding-bottom: 80px;
-        >li{
-            width: 40%;
-            >h5{
-               background: $white;
-               border: $light-border;
-    
-            }
-        }
+.feedback {
+  padding-bottom: $spacing * 10;
+  &-list {
+    justify-content: space-between;
+  }
+  &-item {
+    width: 23%;
+    box-shadow: 0px 2px 6px #00000029;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+  }
+  @include respond(pc) {
+    &-list {
+      justify-content: center;
     }
+    &-item {
+      width: 48%;
+    }
+  }
+  @include respond(tablet) {
+    &-item {
+      width: 95%;
+    }
+  }
+}
+
+.form {
+  background: $light;
+  &-wrapper {
+    max-width: 636px;
+    margin: 0 auto;
+    @include respond(tablet) {
+      max-width: 95%;
+    }
+  }
+
+  &-label {
+    margin-bottom: $spacing;
+    font-weight: 600;
+  }
+  &-input {
+    margin-bottom: $spacing * 2;
+    height: $spacing * 4;
+  }
+  &-btn {
+    padding: 16px 176px;
+    background: $primary;
+    margin: 0 auto;
+    border: none;
+    @include respond(tablet) {
+      padding: 16px 0;
+      width: 100%;
+    }
+  }
+  &-checkbox {
+    > input {
+      height: $spacing * 3;
+      width: $spacing * 3;
+      margin-right: 4px;
+    }
+  }
 }

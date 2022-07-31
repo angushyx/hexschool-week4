@@ -1,67 +1,85 @@
-.ml{
-    &-1{
-        margin-left: $spacing; 
-    }
-    &-2{
-        margin-left: $spacing;
-    }
-    &-3{
-        margin-left: $spacing;
-    }
-    &-4{
-        margin-left: $spacing;
-    }
-    &-5{
-        margin-left: $spacing;
-    }
-    &-6{
-        margin-left: $spacing;
-    }
-    &-7{
-        margin-left: $spacing;
-    }
-    &-8{
-        margin-left: $spacing;
-    }
+.ml {
+  &-1 {
+    margin-left: $spacing;
+  }
+  &-2 {
+    margin-left: $spacing;
+  }
+  &-3 {
+    margin-left: $spacing;
+  }
+  &-4 {
+    margin-left: $spacing;
+  }
+  &-5 {
+    margin-left: $spacing;
+  }
+  &-6 {
+    margin-left: $spacing;
+  }
+  &-7 {
+    margin-left: $spacing;
+  }
+  &-8 {
+    margin-left: $spacing;
+  }
 }
 
-
-.mr{
-    &-1{
-        margin-right: $spacing;
-    }
-    &-2{
-        margin-right: $spacing*2; 
-    }
-    &-3{
-        margin-right: $spacing;
-    }
-    &-4{
-        margin-right: $spacing;
-    }
-    &-5{
-        margin-right: $spacing;
-    }
-    &-6{
-        margin-right: $spacing;
-    }
-    &-7{
-        margin-right: $spacing;
-    }
-    &-8{
-        margin-right: $spacing;
-    }
-
+.mr {
+  &-1 {
+    margin-right: $spacing;
+  }
+  &-2 {
+    margin-right: $spacing * 2;
+  }
+  &-3 {
+    margin-right: $spacing;
+  }
+  &-4 {
+    margin-right: $spacing;
+  }
+  &-5 {
+    margin-right: $spacing;
+  }
+  &-6 {
+    margin-right: $spacing;
+  }
+  &-7 {
+    margin-right: $spacing;
+  }
+  &-8 {
+    margin-right: $spacing;
+  }
 }
 
-
-.mb{
-    &-1{
-        margin-bottom: $spacing;
-    }
-    &-2{
-        margin-bottom: $spacing; 
-    }
+.mb {
+  &-1 {
+    margin-bottom: $spacing;
+  }
+  &-2 {
+    margin-bottom: $spacing * 2;
+  }
+  &-3 {
+    margin-bottom: $spacing * 3;
+  }
+  &-4 {
+    margin-bottom: $spacing * 4;
+  }
+  &-5 {
+    margin-bottom: $spacing * 4;
+  }
+  &-6 {
+    margin-bottom: $spacing * 4;
+  }
+  &-7 {
+    margin-bottom: $spacing * 4;
+  }
+  &-8 {
+    margin-bottom: $spacing * 4;
+  }
+  &-9 {
+    margin-bottom: $spacing * 9;
+  }
 }
 
 /*
@@ -74,34 +92,32 @@
 96
 
 */
-.mt{
-    &-1{
-        margin-top: $spacing;
-    }
-    &-2{
-        margin-top: $spacing*2; 
-    }
-    &-3{
-        margin-top: $spacing*3;
-    }
-    &-4{
-        margin-top: $spacing*4;
-    }
-    &-5{
-        margin-top: $spacing*5;
-    }
-    &-6{
-        margin-top: $spacing*6;
-    }
-    &-7{
-        margin-top: $spacing*10;
-    }
-    &-8{
-        margin-top: $spacing*12;
-    }
-
+.mt {
+  &-1 {
+    margin-top: $spacing;
+  }
+  &-2 {
+    margin-top: $spacing * 2;
+  }
+  &-3 {
+    margin-top: $spacing * 3;
+  }
+  &-4 {
+    margin-top: $spacing * 4;
+  }
+  &-5 {
+    margin-top: $spacing * 5;
+  }
+  &-6 {
+    margin-top: $spacing * 6;
+  }
+  &-7 {
+    margin-top: $spacing * 10;
+  }
+  &-8 {
+    margin-top: $spacing * 12;
+  }
 }
-
 
 /*
 page
@@ -109,105 +125,121 @@ page
 
 */
 
-
 /*
 
 48
 
 */
-.pt{
-    &-1{
-        padding-top:$spacing;
-    }
- 
-    &-2{
-        padding-top:$spacing*1.5 ;
-    }
- 
-    &-3{
-        padding-top:$spacing;
-    }
- 
-    &-4{
-        padding-top:$spacing;
-    }
- 
-    &-5{
-        padding-top:$spacing;
-    }
-    &-6{
-        padding-top:$spacing*6; //48
-    }
-    &-8{
-        padding-top:$spacing;
-    }
+.pt {
+  &-1 {
+    padding-top: $spacing;
+  }
+
+  &-2 {
+    padding-top: $spacing * 1.5;
+  }
+
+  &-3 {
+    padding-top: $spacing;
+  }
+
+  &-4 {
+    padding-top: $spacing;
+  }
+
+  &-5 {
+    padding-top: $spacing;
+  }
+  &-6 {
+    padding-top: $spacing * 6; //48
+  }
+  &-8 {
+    padding-top: $spacing;
+  }
 }
 
-.pb{
-    &-1{
-        padding-top:$spacing;
-    }
- 
-    &-2{
-        padding-top:$spacing*1.5 ;
-    }
- 
-    &-3{
-        padding-top:$spacing;
-    }
- 
-    &-4{
-        padding-top:$spacing*3;
-    }
- 
-    &-5{
-        padding-top:$spacing;
-    }
-    &-6{
-        padding-top:$spacing*6; //48
-    }
-    &-8{
-        padding-bottom:$spacing*10; //80
-    }
+.pb {
+  &-1 {
+    padding-bottom: $spacing;
+  }
+
+  &-2 {
+    padding-bottom: $spacing * 1.5;
+  }
+
+  &-3 {
+    padding-bottom: $spacing;
+  }
+
+  &-4 {
+    padding-bottom: $spacing * 3;
+  }
+
+  &-5 {
+    padding-bottom: $spacing;
+  }
+  &-6 {
+    padding-bottom: $spacing * 6; //48
+  }
+  &-8 {
+    padding-bottom: $spacing * 10; //80
+  }
 }
 
-.py{
-    &-1{
-        padding-top:$spacing;
-        padding-bottom: $spacing;
-    }
- 
-    &-2{
-        padding-top:$spacing*1.5 ; //12
-        padding-bottom: $spacing*1.5; //12
-    }
- 
-    &-3{
-        padding-top:$spacing;
-        padding-bottom: $spacing;
-    }
- 
-    &-4{
-        padding-top:$spacing ;
-        padding-bottom: $spacing;
-    }
- 
-    &-5{
-        padding-top:$spacing ;
-        padding-bottom: $spacing;
-    }
-    &-5{
-        padding-top:$spacing ;
-        padding-bottom: $spacing;
-    }
-    &-8{
-        padding-top:$spacing*4;
-        padding-bottom: $spacing*4;
-    }
-    @include respond(tablet){
-        &-md-1{
-            padding-top:$spacing*1.5 ; //12
-            padding-bottom: $spacing*1.5; //12
-        }
-    }}
+.py {
+  &-1 {
+    padding-top: $spacing;
+    padding-bottom: $spacing;
+  }
 
+  &-2 {
+    padding-top: $spacing * 1.5; //12
+    padding-bottom: $spacing * 1.5; //12
+  }
+
+  &-3 {
+    padding-top: $spacing;
+    padding-bottom: $spacing;
+  }
+
+  &-4 {
+    padding-top: $spacing;
+    padding-bottom: $spacing;
+  }
+
+  &-5 {
+    padding-top: $spacing;
+    padding-bottom: $spacing;
+  }
+  &-5 {
+    padding-top: $spacing;
+    padding-bottom: $spacing;
+  }
+  &-8 {
+    padding-top: $spacing * 4;
+    padding-bottom: $spacing * 4;
+  }
+  @include respond(tablet) {
+    &-md-1 {
+      padding-top: $spacing * 1.5; //12
+      padding-bottom: $spacing * 1.5; //12
+    }
+  }
+}
+
+.px {
+  &-1 {
+    padding-right: $spacing;
+    padding-left: $spacing;
+  }
+
+  &-2 {
+    padding-right: $spacing * 2;
+    padding-left: $spacing * 2;
+  }
+
+  &-3 {
+    padding-right: $spacing;
+    padding-left: $spacing;
+  }
+}
