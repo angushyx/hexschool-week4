@@ -1,0 +1,63 @@
+header{
+
+    .icon{
+        display: none;
+    }
+    .logo{
+        width: 80px;
+        object-fit: cover;
+    }
+
+
+    @include respond(tablet){
+        .nav{
+            display: none;
+        }
+        .icon{
+            display: block;
+        }
+    }}
+
+.footer{
+    &-wrapper{
+        border-bottom: $light-border;
+    }
+    .icon{
+        width: $spacing*6;
+    }
+
+    .contact{
+        padding-top:$spacing *3;
+        padding-bottom:$spacing *6;
+    }
+
+    .trem{
+        p:first-child{
+            flex: 1;
+        }
+    }
+ 
+    @include respond(tablet){
+        &-wrapper{
+           @include flex-between-center;
+           flex-direction:row-reverse;
+           align-items: flex-start;
+        }
+        .nav{
+            display: none;
+        }
+        .icon{
+            width: $spacing*3;
+        }
+           .contact{
+         padding-bottom:$spacing *3;
+        }
+    
+        .trem{
+            flex-direction: column;
+            gap: $spacing;
+            align-items: flex-start;
+        }
+    } 
+
+}

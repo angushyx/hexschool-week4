@@ -14,9 +14,6 @@
       }
     }
 
-    @include respond(tablet){
-      
-    }
 }
 
 .about{
@@ -26,7 +23,7 @@
         align-items: baseline;
         >li{
             @include flex-col-center-center;
-            flex: 1;
+            width: 23%;
             >img{
                 width: 100px;
                 margin-bottom: $spacing*2;
@@ -39,6 +36,51 @@
             >p{
                 font-weight: 600;
                 line-height: 24px;
+            }
+            
+        @include respond(tablet){
+            width: 43%;
+        }
+        @include respond(phone){
+            width: 100%;
+        }
+        }
+    }
+}
+
+
+.classic {
+    &-wrapper {
+        gap: 24px;
+        > li {
+          width: 28%;
+          text-align: center;
+          padding-bottom: 80px;
+          >h5{
+            padding-top: 8px;
+          }
+        @include respond(pc){
+            justify-content: center;
+            width: 70%;
+        }
+        @include respond(tablet){
+            width: 100%;
+        }
+        }
+    }
+}
+
+.co-branding{
+    background: url('../../images/home-header.png');
+    background: #ccc;
+    ul{
+        padding-bottom: 80px;
+        >li{
+            width: 40%;
+            >h5{
+               background: $white;
+               border: $light-border;
+    
             }
         }
     }

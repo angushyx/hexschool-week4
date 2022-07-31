@@ -12,6 +12,8 @@
     text-align: center;
     color: $primary;
     @include respond(tablet){
+        font-size: $font-size-base*2.4;
+        line-height: $spacing*4;
         padding-top: $spacing*5;
         padding-bottom: $spacing*4;
     }
