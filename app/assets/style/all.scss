@@ -1,6 +1,4 @@
 @import 
   "./abstracts/variable","./base/base",
-  "./base/reset",
-  "./abstracts/mixins","./unity/spacing","./unity/text","./unity/typography","./unity/utilities"
-  //layout
-  ,"./layout/header.scss","./layout/footer.scss"
+  "./base/reset","./abstracts/mixins",
+  "./unity/spacing","./unity/text","./unity/utilities","./layout/layout","./pages/index";

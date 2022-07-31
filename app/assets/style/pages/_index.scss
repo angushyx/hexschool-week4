@@ -1,0 +1,45 @@
+.hero{
+    background-size: cover;
+    height: 840px;
+    background: #ccc;
+
+    &-wrapper{
+      height: 100%;
+      >.btn{
+        background: $primary;
+        align-self:flex-end;
+        padding: 12px 6px;
+        font-size: 20px;
+        line-height: 30px;
+      }
+    }
+
+    @include respond(tablet){
+      
+    }
+}
+
+.about{
+    background: $light;
+    &-wrapper{
+        padding-bottom: $spacing*10;
+        align-items: baseline;
+        >li{
+            @include flex-col-center-center;
+            flex: 1;
+            >img{
+                width: 100px;
+                margin-bottom: $spacing*2;
+            }
+            >h5{
+                color:$primary;
+                margin-bottom: $spacing;
+                line-height: 36px;
+            }
+            >p{
+                font-weight: 600;
+                line-height: 24px;
+            }
+        }
+    }
+}

@@ -9,6 +9,12 @@
     font-size: $font-size-base*4.8;
     padding-bottom: $spacing*6;
     line-height: $spacing*9;
+    text-align: center;
+    color: $primary;
+    @include respond(tablet){
+        padding-top: $spacing*5;
+        padding-bottom: $spacing*4;
+    }
 }
 
 .d-flex{
@@ -50,7 +56,16 @@
     flex-wrap: wrap;
 }
 
+.text-center{
+  text-align: center;
+}
+.text-end{
+  text-align:end;
+}
 
+.text-start{
+  text-align: start;
+}
 /*
 8
 24
@@ -96,9 +111,6 @@
 
 
 @include respond(phone){}
-
-
-
 
 
 

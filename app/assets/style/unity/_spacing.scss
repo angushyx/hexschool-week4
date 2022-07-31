@@ -170,7 +170,7 @@ page
         padding-top:$spacing*6; //48
     }
     &-8{
-        padding-top:$spacing;
+        padding-bottom:$spacing*10;
     }
 }
 
@@ -207,15 +207,10 @@ page
         padding-top:$spacing*4;
         padding-bottom: $spacing*4;
     }
- 
     @include respond(tablet){
         &-md-1{
             padding-top:$spacing*1.5 ; //12
             padding-bottom: $spacing*1.5; //12
         }
-    }
-}
+    }}
 
-.px{
-    @include respond(tablet){}
-}

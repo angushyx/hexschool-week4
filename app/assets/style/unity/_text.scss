@@ -21,9 +21,14 @@
         font-size: $font-size-base*6.4;
     }
 
+
     @include respond(tablet){
         &-md-4{
             font-size: $font-size-base*1.6;
+        }
+
+        &-md-6{
+            font-size: $font-size-base*3.6;
         }
     }
 }
@@ -41,12 +46,14 @@
     &-white{    
         color: $white;
     }
+    &-primary{    
+        color: $primary;
+    }
 }
 /*  line height */
 
 
 /*
-
 21
 24 
 30
@@ -56,7 +63,6 @@
 63
 72
 96
-
 */
 
 
@@ -93,8 +99,11 @@
     }
 
     @include respond(tablet){
-
+        &-md-7{
+            line-height: $line-height-spacing*8;
+        }
+        &-md-10{
+            line-height: $line-height-spacing*12;
+        }
     }
-
-
 }
