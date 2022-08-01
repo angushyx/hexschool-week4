@@ -1,7 +1,7 @@
 $primary: #aa0601;
 $secondary: #650300;
 $light: #fbf2f2;
-$black: #000;
+$black: #222;
 $white: #fff;
 $gray: #707070;
 $gray-light: #dee2e6;
@@ -17,3 +17,30 @@ $font-size-base:10px;
 
 $light-border: 1px solid $gray-light;
 $dark-border: 1px solid $gray-dark;
+
+$fontSize: (
+  base: $font-size-base * 1.6,
+  1: $font-size-base * 1.4,
+  2: $font-size-base * 2,
+  3: $font-size-base * 2.4,
+  4: $font-size-base * 2.8,
+  5: $font-size-base * 3.2,
+  6: $font-size-base * 3.6,
+  7: $font-size-base * 4,
+  8: $font-size-base * 4.8,
+  9: $font-size-base * 6.4,
+  10: $font-size-base * 7.2,
+);
+
+$lineHeight:(
+    1: $line-height-spacing * 7,//21
+    2: $line-height-spacing * 8,//24
+    3: $line-height-spacing * 9,//27
+    4: $line-height-spacing * 10,//30
+    5: $line-height-spacing * 12, //36
+    6: $line-height-spacing * 16,//48
+    7: $line-height-spacing * 18,//54
+    8: $line-height-spacing * 21,//63
+    9: $line-height-spacing * 24, //72
+    10: $line-height-spacing * 32, //96
+)

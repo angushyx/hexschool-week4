@@ -6,7 +6,6 @@
 .subTitle {
   padding-top: $spacing * 10;
   font-size: $font-size-base * 4.8;
-  padding-bottom: $spacing * 6;
   line-height: $spacing * 9;
   text-align: center;
   color: $primary;
@@ -17,6 +16,14 @@
     padding-bottom: $spacing * 4;
   }
 }
+
+.absolute{
+  position: absolute;
+}
+.relative{
+  position: relative;
+}
+
 
 .d-flex {
   display: flex;
@@ -67,6 +74,10 @@
 .text-start {
   text-align: start;
 }
+.flex-1{
+  flex: 1;
+}
+
 /*
 8
 24

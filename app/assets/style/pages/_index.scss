@@ -20,10 +20,9 @@
   &-wrapper {
     padding-bottom: $spacing * 10;
     align-items: baseline;
-    justify-content: center;
+    justify-content: space-between;
     > li {
       @include flex-col-center-center;
-
       width: 23%;
       > img {
         width: 100px;
@@ -38,15 +37,18 @@
         font-weight: 600;
         line-height: 24px;
       }
-
       @include respond(tablet) {
         width: 43%;
       }
-      @include respond(phone) {
-        width: 95%;
-      }
+    }
+  @include respond(phone) {
+    justify-content: center;
+     >li{ 
+      width: 95%;
     }
   }
+  }
+
 }
 
 .classic {

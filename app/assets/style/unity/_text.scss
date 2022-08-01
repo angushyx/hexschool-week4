@@ -1,41 +1,83 @@
-/* font-size font-weight line-height */
+/***********************************/
+/********** font size ***********/
+/*********************************/
+@each $key, $val in $fontSize {
+   .fz-#{$key}{
+    font-size: #{$val};
+   }
+}
 
-.fz {
-  &-1 {
-    font-size: $font-size-base * 1.4;
-  }
-  &-2 {
-    font-size: $font-size-base * 1.6;
-  }
-  &-3 {
-    font-size: $font-size-base * 2;
-  }
-  &-4 {
-    font-size: $font-size-base * 3.6;
-  }
-  &-5 {
-    font-size: $font-size-base * 4.8;
-  }
-  &-6 {
-    font-size: $font-size-base * 6.4;
-  }
-
+@each $key, $val in $fontSize {
   @include respond(tablet) {
-    &-md-4 {
-      font-size: $font-size-base * 1.6;
-    }
+    .fz-md-#{$key}{
+      font-size: #{$val};
+     }
+  }
+  
+}
 
-    &-md-6 {
-      font-size: $font-size-base * 3.6;
-    }
+@each $key, $val in $fontSize {
+  @include respond(phone) {
+    .fz-sm-#{$key}{
+      font-size: #{$val};
+     }
   }
 }
 
+
+/***********************************/
+/********** line height ***********/
+/*********************************/
+@each $key, $val in $lineHeight {
+  .line-height-#{$key}{
+    line-height: #{$val};
+   }
+}
+
+@each $key, $val in $lineHeight {
+  @include respond(tablet) {
+    .line-height-md-#{$key}{
+      line-height: #{$val};
+     }
+  }
+}
+@each $key, $val in $lineHeight {
+  @include respond(phone) {
+    .line-height-sm-#{$key}{
+      line-height: #{$val};
+     }
+  }
+}
+
+@each $key, $val in $fontSize {
+  .text-#{$key} {
+    font-size: #{$val};
+  }
+}
+
+
+/***********************************/
+/********** font-weight ***********/
+/*********************************/
+
+.fw{
+  &-bold{
+    font-weight: 700;
+  }
+}
+
+
+/***********************************/
+/********** font-family ***********/
+/*********************************/
 .italic {
   font-style: italic;
 }
 
-/* color */
+
+/***********************************/
+/********** font-color ***********/
+/*********************************/
 .text {
   &-white {
     color: $white;
@@ -46,8 +88,44 @@
   &-gray {
     color: $gray;
   }
+  &-dark {
+    color: $black;
+  }
 }
-/*  line height */
+
+
+
+// .fz {
+//   &-1 {
+//     font-size: $font-size-base * 1.4;
+//   }
+//   &-2 {
+//     font-size: $font-size-base * 1.6;
+//   }
+//   &-3 {
+//     font-size: $font-size-base * 2.0;
+//   }
+//   &-4 {
+//     font-size: $font-size-base * 3.6;
+//   }
+//   &-5 {
+//     font-size: $font-size-base * 4.8;
+//   }
+//   &-6 {
+//     font-size: $font-size-base * 6.4;
+//   }
+
+//   @include respond(tablet) {
+//     &-md-4 {
+//       font-size: $font-size-base * 1.6;
+//     }
+
+//     &-md-6 {
+//       font-size: $font-size-base * 3.6;
+//     }
+//   }
+// }
+
 
 /*
 21
@@ -60,45 +138,44 @@
 72
 96
 */
+// .line-height {
+//   &-1 {
+//     line-height: $line-height-spacing * 7; //21
+//   }
+//   &-2 {
+//     line-height: $line-height-spacing * 8; //24
+//   }
+//   &-3 {
+//     line-height: $line-height-spacing * 9;
+//   }
+//   &-4 {
+//     line-height: $line-height-spacing * 10; //30
+//   }
+//   &-5 {
+//     line-height: $line-height-spacing * 12; //36
+//   }
+//   &-6 {
+//     line-height: $line-height-spacing * 16; //48
+//   }
+//   &-7 {
+//     line-height: $line-height-spacing * 18; //54
+//   }
+//   &-8 {
+//     line-height: $line-height-spacing * 21; //63
+//   }
+//   &-9 {
+//     line-height: $line-height-spacing * 24; //72
+//   }
+//   &-10 {
+//     line-height: $line-height-spacing * 32; //96
+//   }
 
-.line-height {
-  &-1 {
-    line-height: $line-height-spacing * 7; //21
-  }
-  &-2 {
-    line-height: $line-height-spacing * 8; //24
-  }
-  &-3 {
-    line-height: $line-height-spacing * 9;
-  }
-  &-4 {
-    line-height: $line-height-spacing * 10; //30
-  }
-  &-5 {
-    line-height: $line-height-spacing * 12; //36
-  }
-  &-6 {
-    line-height: $line-height-spacing * 16; //48
-  }
-  &-7 {
-    line-height: $line-height-spacing * 18; //54
-  }
-  &-8 {
-    line-height: $line-height-spacing * 21; //63
-  }
-  &-9 {
-    line-height: $line-height-spacing * 24; //72
-  }
-  &-10 {
-    line-height: $line-height-spacing * 32; //96
-  }
-
-  @include respond(tablet) {
-    &-md-7 {
-      line-height: $line-height-spacing * 8;
-    }
-    &-md-10 {
-      line-height: $line-height-spacing * 12;
-    }
-  }
-}
+//   @include respond(tablet) {
+//     &-md-7 {
+//       line-height: $line-height-spacing * 8;
+//     }
+//     &-md-10 {
+//       line-height: $line-height-spacing * 12;
+//     }
+//   }
+// }

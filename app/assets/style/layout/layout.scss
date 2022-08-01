@@ -25,11 +25,6 @@ header {
     width: $spacing * 6;
   }
 
-  .contact {
-    padding-top: $spacing * 3;
-    padding-bottom: $spacing * 6;
-  }
-
   .trem {
     p:first-child {
       flex: 1;
@@ -46,9 +41,6 @@ header {
     }
     .icon {
       width: $spacing * 3;
-    }
-    .contact {
-      padding-bottom: $spacing * 3;
     }
 
     .trem {
