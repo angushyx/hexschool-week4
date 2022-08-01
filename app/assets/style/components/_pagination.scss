@@ -1,0 +1,27 @@
+.pagination{
+   &-list{
+    >li{
+        width: $spacing*5; 
+        border: $light-border;
+    }
+
+    >li:first-child,li:last-child{
+        width: $spacing*10;
+    }
+
+    >li:last-child{
+        background: $gray-light;
+    }
+
+    >li:nth-of-type(3){
+        background: $black;
+    }
+    
+   }
+    a{
+        color: $black;
+        >p{
+            text-align: center;
+        }
+    }
+}
