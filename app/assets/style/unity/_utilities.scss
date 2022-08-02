@@ -80,6 +80,20 @@
   flex: 1;
 }
 
+@include respond(phone) {
+  .d-sm-none {
+    display: none !important;
+  }
+  .justify-sm-center{
+    justify-content: center;
+  }
+  .justify-sm-between{
+    justify-content: space-between;
+  }
+}
+
+
+
 /*
 8
 24
@@ -117,7 +131,20 @@
   }
 }
 
-@include respond(tablet) {
+@include respond(phone) {
+  .gap{
+    &-sm-1 {
+      gap: $spacing; 
+    }
+    &-sm-2 {
+      gap: $spacing * 2; //16
+    }
+    &-sm-3 {
+      gap: $spacing * 3; //24
+    }
+  }
+
+
 }
 
 @include respond(phone) {

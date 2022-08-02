@@ -5,9 +5,6 @@
     height: 100%;
     align-items: center;
   }
-  @include respond(phone) {
-   display: none;
-  }
 }
 
 
@@ -54,3 +51,46 @@
   }
 }
   
+.post-wrapper{
+  &_article{
+    width: 60%;
+   
+  }
+  &_category{
+    width: 20%;
+    >ul{
+      column-gap: $spacing*3;
+    }
+  }
+  @include respond(tablet) {
+    &_article{
+      width:75%;
+    }
+    &_category{
+      width: 20%;
+    }
+  }
+  @include respond(phone) {
+    &_article{
+      width:100%;
+    }
+    &_category{
+      display: none;
+    }
+  }
+
+}
+
+.post-share{
+  width: 60%;
+  &-media{
+    border-bottom: $light-border;
+  }
+  @include respond(tablet) {
+    width: 100%;
+  }
+  @include respond(phone) {
+    display: none;
+  }
+}
+

@@ -4,6 +4,13 @@
       width: 300px;
     }
   }
+  @include respond(phone) {
+    &-select {
+      > select {
+        width: 200px;
+      }
+    }
+  }
 }
 
 .location-info {
@@ -17,7 +24,7 @@
       border: none;
     }
 
-    @include respond(tablet) {
+    @include respond(pc) {
       justify-content: space-between;
       max-width: 48%;
     }
@@ -39,9 +46,26 @@
     border: $light-border;
   }
   &_map {
-    height: 465px;
-    max-width: 60%;
-    height: 100%;
+    width: 60%;
+  }
+
+  &-card{
+    width: 50%;
+    @include respond(tablet) {
+      width:100%;
+      display: flex;
+      gap: $spacing*3;
+      >img{
+        width: 50%;
+      }
+    }
+    @include respond(phone) {
+      flex-direction: column;
+      gap: 0;
+      >img{
+        width:100%;
+      }
+    }
   }
 
   @include respond(phone) {
@@ -59,5 +83,12 @@
       flex-direction: column;
       display: flex;
     }
+  }
+}
+
+.location-detail_card_text{
+  border: $light-border;
+  >h5{
+    border: $light-border;
   }
 }

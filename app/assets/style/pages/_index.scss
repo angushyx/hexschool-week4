@@ -1,7 +1,12 @@
 .hero {
-  background-size: cover;
   height: 840px;
-  background: #ccc;
+  /* !! image 無法載入!! */
+  background: url('../../images/home-header.png');
+  background-size: cover;
+
+  @include respond(phone) {
+    background: url('../../images/home-header-sm.png');
+  }
 
   &-wrapper {
     height: 100%;
