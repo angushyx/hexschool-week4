@@ -1,0 +1,78 @@
+.location{
+    &-title{
+        padding-left: 16px;
+        &::before{
+            content: "";
+            position: relative;
+            border-left: $primary solid $spacing;
+            top: 0;
+            left: -16px;
+            height: 100%;
+        }
+    }
+    &-select{
+        >select{
+            width: 300px;
+        }
+    }
+}
+
+.location-info{
+    &-item{
+        max-width:32%;
+        border: $light-border;
+
+      &_btn{
+        width: 100%;
+        background: $black;
+        border: none;
+      }
+    
+      @include respond(tablet) {
+            justify-content: space-between;
+            max-width: 48%;
+        }
+      @include respond(phone) {
+            max-width: 100%;
+
+        }
+    }
+
+}
+
+.location-info_text{
+    &_icon{
+        margin-right: $spacing*2;
+    }
+}
+
+.location-detail{
+    &_info{
+      max-width: 38%;
+      border: $light-border;
+    }
+    &_map{
+       max-width:60%; 
+       height: 100%;
+    }
+
+    @include respond(phone) {
+        max-width: 100%;
+    }
+
+
+    @include respond(tablet) {
+        flex-direction: column;
+        &_info{
+            display: flex;
+        }
+    }
+    @include respond(phone) {
+        &_info{
+            flex-direction: column;
+            display: flex;
+        }
+    }
+}
+
+
