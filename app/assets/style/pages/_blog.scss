@@ -3,13 +3,54 @@
   height: $spacing * 7;
   &-wrapper {
     height: 100%;
+    align-items: center;
+  }
+  @include respond(phone) {
+   display: none;
   }
 }
+
+
+
 .blog-item {
-  > img {
-    width: 40%;
-  }
-  &-text {
-    width: 60%;
+    > img {
+      width: 50%;
+    }
+    &-text {
+      width: 50%;
+    }
+    &-btn{
+      align-self: flex-end;
+      @include respond(pc) {
+      display: none;
+      }
+    }
+  @include respond(phone) {
+      flex-direction: column;
+      >img{
+        width: 100%;
+      }
+      &-text{
+        width: 100%;
+        &_wrapper{
+          >p{
+            display: none;
+          }
+        }
+      }
+  }    
+}
+
+.blog-item:not(:last-child) {
+  margin-bottom: 60px;
+  @include respond(pc) {
+    margin-bottom: 24px;
   }
 }
+.blog-item:last-child{
+  margin-bottom: 124px;
+  @include respond(tablet) {
+    margin-bottom: 80px;
+  }
+}
+  

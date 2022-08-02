@@ -84,8 +84,14 @@
   &-primary {
     color: $primary;
   }
+  &-secondary {
+    color: $secondary;
+  }
   &-gray {
     color: $gray;
+  }
+  &-gray-dark {
+    color: $gray-dark;
   }
   &-dark {
     color: $black;
