@@ -1,0 +1,15 @@
+.blog-nav {
+  background: $secondary;
+  height: $spacing * 7;
+  &-wrapper {
+    height: 100%;
+  }
+}
+.blog-item {
+  > img {
+    width: 40%;
+  }
+  &-text {
+    width: 60%;
+  }
+}

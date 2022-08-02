@@ -1,0 +1,11 @@
+.page-title {
+  padding-left: 16px;
+  &::before {
+    content: "";
+    position: relative;
+    border-left: $primary solid $spacing;
+    top: 0;
+    left: -16px;
+    height: 100%;
+  }
+}
