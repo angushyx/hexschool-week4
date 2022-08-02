@@ -1,10 +1,36 @@
----
-title: 部落格
-layout: ./app/layout.ejs
-engine: ejs
-current: blog-detail
----
-<main>  
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/style/all.css">
+  <title>
+    部落格
+  </title>
+  <script src="https://kit.fontawesome.com/9d802b7972.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header class="bg-primary">
+    <div class="container d-flex-between-center text-white">
+      <div class="py-2">
+        <a href="./">
+          <img src="./assets/images/logo-white.png" class="logo" alt="logo">
+        </a>
+      </div>
+      <ul class="d-flex gap-7 fz-3 nav line-height-4">
+        <li class="link"><a href="./product.html">系列鏡框</a></li>
+        <li class="link"><a href="./location.html">門市據點</a></li>
+        <li class="link"><a href="./blog.html">部落格</a></li>
+        <li class="link"><a href="./fqa.html">常見問題</a></li>
+      </ul>
+      <i class="icon fa-solid fa-bars hamburger fz-5"></i>
+    </div>
+  </header>
+
+  <main>  
    <nav class="blog-nav text-white ">
     <div class="container blog-nav-wrapper d-flex-between-center justify-sm-center">
       <ul class="d-flex gap-6 gap-sm-3">
@@ -80,3 +106,50 @@ current: blog-detail
     </div>
 
 </main>
+
+
+    <footer class="footer bg-primary">
+      <div class="container">
+        <div class="footer-wrapper pb-4 pt-6">
+          <div class="d-flex-between-center text-white">
+            <ul class="nav d-flex gap-6 line-height-2">
+              <li class="link"><a href="./">首頁</a></li>
+              <li class="link"><a href="./product.html">系列鏡框</a></li>
+              <li class="link"><a href="./location.html">門市據點</a></li>
+              <li class="link"><a href="./blog.html">部落格</a></li>
+              <li class="link"><a href="./fqa.html">常見問題</a></li>
+            </ul>
+            <ul class="d-flex gap-4">
+              <li class="icon">
+                <img src="./assets/images/ic-social-fb.png" alt="facebook icon">
+              </li>
+              <li class="icon">
+                <img src="./assets/images/ic_social_ig.png" alt="insta icon">
+              </li>
+              <li class="icon">
+                <img src="./assets/images/ic_social_line.png" alt="facebook icon">
+              </li>
+            </ul>
+          </div>
+
+          <div class="contact">
+            <ul class="fz-5 text-white line-height-7 fz-sm-base line-height-sm-2">
+              <li><i class="fa-solid fa-phone mr-2"></i><span>0800-000-000</span></li>
+              <li><i class="fa-solid fa-envelope mr-2"></i></i>glasses@business.com</li>
+            </ul>
+          </div>
+        </div> 
+        <div class="trem fz-2 line-height-2 text-white py-8 d-flex-between-center gap-6 py-md-1 ">
+          <p>Copyright © 2020 Glasses.All rights reserved.</p>
+          <p>隱私權政策</p>
+          <p>服務條款</p>
+        </div>
+      </div>
+      </div>
+    </footer>
+
+
+    <script src="https://kit.fontawesome.com/9d802b7972.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
